@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
+
+   <HBox prefHeight="400.0" prefWidth="400.0">
+      <ListView fx:id="listMasina" prefHeight="400.0" prefWidth="400.0" />
+   </HBox>
+
+   <HBox layoutX="400.0" prefHeight="400.0" prefWidth="400.0">
+      <children>
+         <ListView fx:id="listInchiriere" prefHeight="400.0" prefWidth="400.0" />
+      </children></HBox>
+   <TextField fx:id="idMasina" layoutY="400.0" prefHeight="50.0" prefWidth="200.0" promptText="ID Masina">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <TextField fx:id="marcaMasina" layoutY="450.0" prefHeight="50.0" prefWidth="200.0" promptText="Marca Masina">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <TextField fx:id="modelMasina" layoutY="500.0" prefHeight="50.0" prefWidth="200.0" promptText="Model Masina">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <Button layoutX="200.0" layoutY="400.0" mnemonicParsing="false" onAction="#onButtonAddMasina" prefHeight="50.0" prefWidth="200.0" text="Adauga Masina">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <Button layoutX="200.0" layoutY="450.0" mnemonicParsing="false" onAction="#onButtonRemoveMasina" prefHeight="50.0" prefWidth="200.0" text="Sterge Masina">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <TextField fx:id="idInchiriere" layoutX="400.0" layoutY="400.0" prefHeight="50.0" prefWidth="200.0" promptText="ID Inchiriere">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <TextField fx:id="idMasinaInchiriere" layoutX="400.0" layoutY="450.0" prefHeight="50.0" prefWidth="200.0" promptText="ID Masina">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <TextField fx:id="dataInceput" layoutX="400.0" layoutY="500.0" prefHeight="50.0" prefWidth="200.0" promptText="Data Inceput">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <TextField fx:id="dataSfarsit" layoutX="400.0" layoutY="551.0" prefHeight="50.0" prefWidth="200.0" promptText="Data Sfarsit">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <Button layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onAction="#onButtonUpdateMasina" prefHeight="50.0" prefWidth="200.0" text="Actualizeaza Masina">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <Button layoutX="600.0" layoutY="400.0" mnemonicParsing="false" onAction="#onButtonAddInchiriere" prefHeight="50.0" prefWidth="200.0" text="Adauga Inchiriere">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <Button layoutX="600.0" layoutY="450.0" mnemonicParsing="false" onAction="#onButtonRemoveInchiriere" prefHeight="50.0" prefWidth="200.0" text="Sterge Inchiriere">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <Button layoutX="600.0" layoutY="500.0" mnemonicParsing="false" onAction="#onButtonUpdateInchiriere" prefHeight="50.0" prefWidth="200.0" text="Actualizeaza Inchiriere">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <Label layoutX="14.0" layoutY="651.0" prefHeight="50.0" prefWidth="100.0" text="Rapoarte" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <Button layoutX="100.0" layoutY="651.0" mnemonicParsing="false" onAction="#onButtonShowMostRentedCarsDialogue" prefHeight="50.0" prefWidth="200.0" text="Cele mai inchiriate masini">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <Button layoutX="300.0" layoutY="651.0" mnemonicParsing="false" onAction="#onButtonShowNumberOfRentalsPerMonthDialogue" prefHeight="50.0" prefWidth="200.0" text="Numarul de inchirieri pe luna">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <Button layoutX="500.0" layoutY="651.0" mnemonicParsing="false" onAction="#onButtonShowCarsRentedForTheLongestTimeDialogue" prefHeight="50.0" prefWidth="200.0" text="Masinile inchiriate cel mai mult timp">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font></Button>
+   <effect>
+      <ColorAdjust />
+   </effect>
+
+</Pane>

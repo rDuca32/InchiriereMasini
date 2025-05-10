@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Random;
 
 public class SQLMasinaRepository extends MemoryRepository<Masina> implements AutoCloseable {
-    private static final String JDBC_URL = "jdbc:sqlite:C:/Users/rauld/Documents/GitHub/a4-rDuca32/JavaFX/InchirieriMasini.db";
+    private static final String JDBC_URL = "jdbc:sqlite:C:/Users/rauld/Documents/GitHub/InchiriereMasini/JavaFX/InchirieriMasini.db";
     private Connection connection = null;
 
     public SQLMasinaRepository() {

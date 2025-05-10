@@ -14,7 +14,7 @@ public class Settings {
         if (instance == null) {
             Properties settings = new Properties();
             try {
-                settings.load(new FileReader("settings.properties"));
+                settings.load(new FileReader("C:\\Users\\rauld\\Documents\\GitHub\\InchiriereMasini\\JavaFX\\settings.properties"));
             } catch (IOException e) {
                 throw new RuntimeException("Error loading settings", e);
             }
